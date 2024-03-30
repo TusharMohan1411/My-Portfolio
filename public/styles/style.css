@@ -1,0 +1,607 @@
+/* universal */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 22px;
+}
+
+body,
+html {
+    height: 100%;
+    max-width: 100vw;
+}
+
+body {
+    background-color: rgb(252, 252, 252);
+}
+
+p {
+    margin: 0px;
+}
+
+:root {
+    --primary-color: #ff4321;
+    --secondary-color: #8e2de2;
+    --main-color: linear-gradient(to right, #8e2de2, #4a00e0);
+    --bg-btn: linear-gradient(to right, #8e2de2, #4a00e0);
+    --bg-dif: linear-gradient(to right, #E0EAFC, #CFDEF3);
+    --main-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+
+/* all buttons of the page */
+
+.m-btn {
+    border-radius: 28px;
+    border: 0;
+    padding: 8px 36px;
+    font-weight: 600;
+    font-size: 18px;
+    background-image: var(--bg-btn);
+    color: white;
+    transition: 0.2s;
+    position: relative;
+    top: 0;
+}
+
+.m-btn:hover {
+    color: white;
+    /* font-size: 19px; */
+    top: -3px;
+    box-shadow: var(--main-shadow);
+}
+
+
+/* navbar */
+
+#nav-b {
+    background-color: rgb(252, 252, 252);
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+#logo-t {
+    font-weight: 900;
+    font-size: 30px;
+}
+
+section {
+    max-width: 80%;
+    margin: auto;
+}
+
+
+/* head section start*/
+
+.head {
+    margin-top: 10px;
+}
+
+#main-head {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 5px solid #8e2de2;
+    border-radius: 30px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: white;
+    transition: 0.5s;
+    position: relative;
+    bottom: 0;
+}
+
+#main-head:hover {
+    transform: perspective(1800px) translate3d(0px, 0px, -100px) rotateX(15deg) scale(0.95, 0.95);
+    bottom: 10px;
+    box-shadow: rgba(0, 0, 0, 0.438) 0px 7px 29px 0px;
+}
+
+#main-head img {
+    width: 450px;
+    margin-top: 50px;
+}
+
+#head-text h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#social-icons {
+    margin-top: 20px;
+}
+
+#social-icons i {
+    font-size: 30px;
+    margin-right: 12px;
+    transition: 0.5s;
+}
+
+#social-icons a {
+    text-decoration: none;
+    color: black;
+}
+
+#social-icons i:hover {
+    color: #ff4800;
+    font-size: 35px;
+}
+
+#head-name {
+    color: #ff4800;
+    font-size: inherit;
+}
+
+
+/* head section end */
+
+
+/* skills Section Start */
+
+#skills-section {
+    margin-top: 100px;
+}
+
+#skills-head {
+    text-align: center;
+}
+
+#skills-head h1 {
+    font-style: 50px;
+    font-weight: bold;
+}
+
+#coding-skills-cont {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.code-card-cont {
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.code-card {
+    background-color: white;
+    padding: 20px 50px;
+    border-radius: 15px;
+    transition: 0.5s;
+    position: relative;
+    bottom: 0px;
+}
+
+.code-card h4 {
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.code-card:hover {
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -15px;
+    bottom: 10px;
+    transform: rotate(-15deg);
+}
+
+.code-card img {
+    height: 100px;
+}
+
+#other-skills-cont h2,
+#coding-skills-cont h2 {
+    border-top: 5px solid black;
+    font-size: 35px;
+    margin-bottom: 10px;
+    margin-top: 50px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+#other-skills-cont h2 {
+    margin-bottom: 40px;
+}
+
+#other-skills {
+    display: flex;
+    gap: 40px;
+}
+
+.skill-col {
+    display: flex;
+    width: 50%;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.skill {
+    width: 100%;
+    height: 40px;
+    border-radius: 100px;
+    transition: 0.5s;
+}
+
+.skill:hover {
+    height: 45px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -15px;
+}
+
+.skill-name {
+    border-radius: 100px;
+}
+
+.skill-name p {
+    padding: 20px;
+    text-align: left;
+    transition: 0.5s;
+}
+
+.skill-name p:hover {
+    font-size: 23px;
+}
+
+
+/* skills Section End*/
+
+
+/* Projects Section Start */
+
+#proejcts-section-cont {
+    margin: 0 auto;
+    margin-top: 100px;
+    background: url("/images/projects/project-back.png");
+    background-color: rebeccapurple;
+    min-width: 100% !important;
+    padding: 0px;
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+}
+
+#proejcts-section {
+    display: flex;
+    max-width: 80%;
+    margin: auto;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#proejcts-section h1 {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 25px;
+}
+
+.projects-row-cont {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.project-card {
+    background-color: rgba(255, 255, 255, 0.801);
+    border-radius: 40px;
+    text-align: center;
+    padding: 10px;
+    padding-bottom: 20px;
+    position: relative;
+    bottom: 0;
+    margin: 0;
+    width: 25%;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    justify-content: space-between;
+}
+
+.project-card:hover {
+    background-color: rgba(255, 255, 255, 0.966);
+    bottom: 10px;
+    transform: rotate(-3deg);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -15px;
+}
+
+.project-card img {
+    /* max-height: 300px; */
+    max-width: 100%;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    box-shadow: rgba(38, 57, 77, 0.466) 0px 10px 20px -10px;
+}
+
+.project-text {
+    flex-grow: 1;
+}
+
+.project-card h3 {
+    font-weight: 700;
+    margin-top: 7px;
+    font-size: 23px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.project-card p {
+    text-align: left;
+    margin-bottom: 10px;
+    line-height: 18px;
+    padding: 0px 10px;
+}
+
+.project-card p,
+.project-card a,
+.project-card p strong {
+    font-family: sans-serif;
+    font-size: 15px;
+    text-align: justify;
+}
+
+.project-btn-cont {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+    justify-content: center;
+}
+
+.project-card button {
+    border-radius: 40px;
+    line-height: 20px;
+    padding: 7px 15px;
+    border: 0;
+    background-color: #5000d1a1;
+    /* background-image: var(--bg-btn); */
+    transition: 0.5s;
+}
+
+.project-card button:hover {
+    box-shadow: var(--main-shadow);
+    transform: rotate(3deg);
+    background-color: #4600b8;
+}
+
+.project-card a {
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+}
+
+.project-card a i {
+    font-size: 18px;
+}
+
+
+/* Projects Section End */
+
+
+/* About Me Section Start */
+
+#aboutme-section {
+    margin-bottom: 100px;
+}
+
+.aboutme-cont {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+}
+
+.aboutme-img img {
+    max-width: 350px;
+    position: relative;
+    bottom: 0;
+    transition: 0.5s;
+}
+
+.aboutme-img img:hover {
+    bottom: 10px;
+}
+
+.aboutme-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    text-align: justify;
+}
+
+.aboutme-text h1 {
+    font-weight: bold;
+    color: #ff4800;
+    font-size: 60px;
+}
+
+.aboutme-text button {
+    width: fit-content;
+    margin-top: 20px;
+}
+
+
+/* About Me Section End */
+
+
+/* Contact Me Section Start */
+
+#contact-section {
+    background-image: url("/images/contact/whytochooseme.png");
+    background-size: cover;
+    min-width: 100% !important;
+    margin: auto;
+    margin-bottom: -100px;
+}
+
+#contact-section-cont {
+    margin: 40px auto;
+    display: flex;
+    gap: 30px;
+    width: 80%;
+    padding: 150px 80px;
+}
+
+#contactme {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 50%;
+    background-color: #E0EAFC;
+    padding: 30px;
+    border-radius: 30px;
+}
+
+#contactme-head p {
+    font-size: 18px;
+}
+
+#my-details-cont {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+#contactme-form form {
+    flex-grow: 1;
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#contactme-form form input,
+#contactme-form form textarea {
+    border: 1px solid white;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 7px 12px;
+}
+
+#contactme-form form #submit-contact {
+    border: 0;
+    width: 40%;
+    margin-top: 10px;
+    border-radius: 100px;
+}
+
+#my-details-cont {
+    display: flex;
+    width: 50%;
+    gap: 20px;
+    background-color: transparent;
+    flex-direction: column;
+    border-radius: 30px;
+}
+
+#my-details-img img {
+    max-width: 100%;
+    /* max-height: 300px; */
+    transition: 0.5s;
+    border-radius: 30px;
+    position: relative;
+    bottom: 0;
+}
+
+#my-details-img img:hover {
+    box-shadow: rgba(38, 57, 77) 0px 20px 30px -15px;
+    rotate: -3deg;
+    bottom: 15px;
+}
+
+#my-details-text {
+    background-color: #E0EAFC;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.my-details-text-card {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    border-radius: 25px;
+    background-color: rgb(203, 240, 255);
+    margin: 10px;
+    padding: 10px 20px;
+    position: relative;
+    bottom: 0;
+    transition: 0.5s;
+    box-shadow: rgba(38, 57, 77, 0.418) 0px 5px 10px -5px;
+}
+
+.my-details-text-card:hover {
+    box-shadow: rgba(38, 57, 77) 0px 20px 30px -15px;
+    rotate: -1deg;
+    bottom: 15px;
+    z-index: 10;
+    background-color: rgb(255, 255, 255);
+}
+
+
+/* .mdt-card-text h5 {
+    font-weight: bold;
+    margin-bottom: 0px;
+    font-size: 20px;
+} */
+
+.mdt-card-text p {
+    font-size: 18px;
+    color: grey;
+    margin-top: 1px;
+}
+
+.my-details-text-card:hover>.mdt-card-text>p {
+    color: black;
+}
+
+
+/* Contact Me Section End */
+
+
+/* footer */
+
+#footer-section {
+    margin-top: 100px;
+    padding: 50px 0;
+    background-color: #1a024a;
+    color: white;
+    max-width: 100% !important;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+#footer-section h1 {
+    font-weight: 500;
+    margin: 0;
+}
+
+#footerlinks {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+#footerlinks a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    bottom: 0px;
+    font-size: 25px;
+    transition: 0.5s;
+}
+
+#footerlinks a:hover {
+    bottom: 5px;
+    font-size: 30px;
+}
+
+#footer-section p {
+    color: #8f77c0;
+}
+
+#copyright {
+    margin-bottom: -25px;
+}
